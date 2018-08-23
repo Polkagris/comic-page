@@ -1,0 +1,92 @@
+body{
+  max-width: 900px;
+  margin: auto;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(minmax(100px, auto), auto);
+  font-family: 'Raleway', sans-serif;
+  background-color: #999;
+}
+#title{
+  grid-column: 1/5;
+  grid-row: 1/2;
+  text-align: center;
+}
+#nav{
+  grid-column: 1/5;
+  grid-row: 2/3;
+  justify-self: center;
+}
+#readingType{
+  grid-column: 1/5;
+  grid-row: 3/4;
+  justify-self: center;
+  margin: 40px;
+}
+#defaultImage{
+  grid-column: 1/5;
+  grid-row: 4/5;
+  justify-self: center;
+  height: 300px;
+  margin: 30px;
+  border: 1px solid black;
+  padding: 2px;
+}
+#contentTable{
+  grid-column: 2/3;
+  grid-row: 6/7;
+  //justify-self: center;
+  //align-items: center;
+}
+#icons{
+  grid-column: 3/4;
+  grid-row: 6/7;
+  justify-self: center;
+}
+.icon{
+  font-size: 30px;
+  cursor: pointer;
+}
+#thumbnails{
+  grid-column: 2/4;
+  grid-row: 7/8;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(minmax(100px, 100px), auto);
+}
+#thumb1{
+  justify-self: center;
+  height: 100px;
+  max-width: 100px;
+}
+#thumb2{
+  justify-self: center;
+  height: 100px;
+  max-width: 100px;
+}
+#thumb3{
+  justify-self: center;
+  height: 100px;
+  max-width: 100px;
+}
+#thumb4{
+  justify-self: center;
+  height: 100px;
+  max-width: 100px;
+}
+#contact{
+  grid-column: 1/5;
+  grid-row: 8/9;
+  justify-self: center;
+  margin-top: 50px;
+}
+#displayAllImages{
+  grid-column: 1/5;
+  grid-row: 5/6;
+  justify-items: center;
+
+}
